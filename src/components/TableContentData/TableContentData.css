@@ -1,0 +1,66 @@
+
+.container-table {
+    width: 100%;
+
+}
+
+.container-data-table {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(219, 219, 219, 0.288);
+}
+
+.filtros {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si no hay suficiente espacio */
+}
+
+@media (max-width: 768px) {
+    .filtros {
+        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan */
+        gap: 10px; /* Incrementa el espacio entre elementos cuando están apilados */
+    }
+}
+
+.filtros label {
+    font-weight: 600;
+}
+
+
+/* Estilo para la fila del encabezado */
+.rdt_TableHeadRow {
+    color: rgb(255, 255, 255);
+    /* font-weight: 700;
+    font-size: 1rem; */
+    font-family: "Poppins", Inter, system-ui, sans-serif;
+}
+
+/* Estilo para las filas expandibles */
+.rdt_ExpanderRow {
+    background-color: #1ae72b;
+}
+
+.rdt_TableCell {
+    background-color: rgb(241, 247, 252);
+    font-family: "Poppins", Inter, system-ui, sans-serif;
+    font-size: 1rem;
+}
+
+.rdt_TableCol {
+    background-color: rgb(10, 75, 255);
+}
+
+.container-table h2{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+}

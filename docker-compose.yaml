@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  frontend:
+    # web
+    container_name: frontend_consentimiento_icfes
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      #args:
+      #- NODE_ENV=integration
+    ports:
+      - 3100:3100
+
+networks:
+  network-backend:
+    driver: bridge
