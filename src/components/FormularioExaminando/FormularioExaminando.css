@@ -1,0 +1,66 @@
+.FormularioExaminando {
+    width: 50%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.FormularioExaminando h2{
+    color: var(--color-dark);
+    text-shadow: none;
+}
+
+.FormularioExaminando label {
+    font-weight: 600;
+    text-align: left;
+    display: block;
+}
+
+.FormularioExaminando input,
+.FormularioExaminando select {
+    width: 100%;
+}
+
+.inputs-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1200px) {
+    .FormularioExaminando {
+        border: 1px solid #c5c5c5;
+        border-radius: 10px;
+        width: 50%;
+        height: 80%;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .FormularioExaminando {
+        height: 90%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .FormularioExaminando {
+        height: 70%;
+        width: 100%;
+    }
+}
